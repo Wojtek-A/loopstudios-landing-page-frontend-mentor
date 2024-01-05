@@ -1,0 +1,95 @@
+.footer {
+  margin: 96px auto 0 auto;
+  width: 375px;
+  height: 470px;
+  background-color: #000;
+  &__logo {
+    margin: 56px 116px 0 116px;
+    width: 144px;
+    height: 24px;
+    transition: all 0.5s;
+    &:hover,
+    :focus {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  &__links {
+    margin: 28px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  &__link {
+    color: #fff;
+    line-height: 25px;
+    transition: all 0.5s;
+    &:hover,
+    :focus {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  &__icons {
+    margin: 48px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s;
+    &:hover,
+    :focus {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  &__text {
+    width: 278px;
+    margin: 16px auto 0 auto;
+    color: #fff;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    margin-top: 184px;
+    width: 1440px;
+    height: 160px;
+    position: relative;
+    &__logo {
+      margin: 44px auto 0 165px;
+    }
+    &__links {
+      margin: 15px auto 0 164px;
+      width: 382px;
+      height: 35px;
+      flex-direction: row;
+      gap: 33px;
+    }
+    &__link {
+      &:hover,
+      :focus {
+        border-bottom: 2px solid white;
+      }
+    }
+    &__icons {
+      margin: 0;
+      position: absolute;
+      top: 44px;
+      right: 165px;
+    }
+    &__text {
+      margin: 0;
+      position: absolute;
+      top: 92px;
+      right: 163px;
+    }
+  }
+}
