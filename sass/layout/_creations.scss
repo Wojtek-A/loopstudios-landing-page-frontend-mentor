@@ -206,6 +206,9 @@
       }
     }
     &__item-headline {
+      &--fourth {
+        width: 100px;
+      }
       margin: 354px auto auto 40px;
       width: 165px;
       font-size: 32px;
